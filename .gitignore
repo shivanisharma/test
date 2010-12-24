@@ -7,3 +7,5 @@
 *.trx
 _ReSharper.WebSite1/
 TestResults/
+bin/
+obj/
