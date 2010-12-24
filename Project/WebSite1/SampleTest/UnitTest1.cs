@@ -55,44 +55,6 @@ namespace SampleTest
         }
 
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-            selenium = new DefaultSelenium("localhost", 4444, "*iexplore", "http://localhost:1987");
-            selenium.Start();
-            selenium.Open("/WebSite1/");
-            selenium.Type("MainContent_TextBox1", "HUM");
-            selenium.Click("MainContent_Button1");
-            selenium.WaitForPageToLoad("3000770");
-            
-            //Get the Table Value of Row 1 and Coulumn 2
-            object GG = selenium.GetTable("MainContent_GridView1.1.2");
-            
-            Assert.AreEqual("1", "1");
-            try
-            {
-                selenium.Stop();
-            }
-            catch (Exception)
-            {
-                // Ignore errors if unable to close the browser
-            }
-
-
-
-        }
-
-        [TestMethod]
-        public void TestMethod4()
-        {
-            selenium = new DefaultSelenium("localhost", 4444, "*iexplore", "http://localhost:1987");
-            selenium.Start();
-            selenium.Open("/WebSite1/");
-            selenium.Type("MainContent_TextBox1", "HUM");
-            selenium.Click("MainContent_Button1");
-            selenium.WaitForPageToLoad("3000770");
-            object GG = selenium.GetTable("MainContent_GridView1.1.2");
-            Assert.AreEqual("1", "1");   
-        }
+      
     }
 }
